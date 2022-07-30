@@ -1,0 +1,21 @@
+* {
+    font-family: 'Manrope', sans-serif !important; 
+    font-weight: 500;
+}
+
+.button {
+    background-color: #0070FF !important ;
+    color: white !important;
+}
+
+.active {
+    background-color: #FF9800 !important;
+}
+
+.navbar-bg {
+    background-image: linear-gradient(to right, white, #0070FF , #FF9800);
+}
+
+
+
+

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>WeatherMe</title>
+        <link href = "style.css" rel = "stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;700&display=swap" rel="stylesheet">
+        <link rel="icon" type="image/x-icon" href = "favicon.ico">
+        <script src="app.js" defer></script>
+    </head>
+    <body>
+        <nav class="navbar navbar-bg">
+            <div class="container-fluid">
+              <a class="navbar-brand">
+                <img src = "WeatherMe Logo No Background.png" height = "125">
+              </a>
+              <div class="d-flex">
+                <input id = "search-box" class="form-control me-2 w-100 border-0" type="search" placeholder="Enter City">
+                <button id = "submit-button" class="button btn">WeatherMe!</button>
+              </div>
+            </div>
+          </nav>
+          <div class = "row border-0" style = "height: 70vh">
+            <div class = "card col-sm-6 border border-3" >
+                <ul class = "list-group p-3">
+                    <li id = "city-1" class="btn list-group-item active my-4 p-4 border-0 w-100">London</li>
+                    <li id = "city-2" class="btn list-group-item my-4 p-4 border-0">New York</li>
+                    <li id = "city-3" class="btn list-group-item my-4 p-4 border-0">Singapore</li>
+                    <li id = "city-4" class="btn list-group-item my-4 p-4 border-0">Johannesburg</li>
+                    <li id = "city-5" class="btn list-group-item my-4 p-4 border-0">Buenos Aires</li>
+                </ul>
+              </div>
+                <div class = "card col-sm-6 p-3 align-items-center border border-3">
+                        <h1 id = "city-name" class = "mt-5">London</h1>
+                        <h1 id = "temperature" class = "mt-4"></h1>
+                        <h5 id = "description" class = "my-4"></h5> 
+                        <div class = "row mt-5">
+                            <div class = "card mt-4 border-0" style = "width:inherit;">
+                                <p id = "feels-like"></p> 
+                                <p id = "max-temp"></p> 
+                                <p id = "min-temp"></p> 
+                            </div>
+                            <div class = "card mt-4 border-0" style = "width:inherit;">
+                                <p id = "wind-speed"></p>
+                                <p id = "humidity"></p>
+                                <p id = "pressure"></p>
+                            </div>
+                        </div>
+                </div>
+                <div class="btn-group pt-3" style = "width: 30px;">
+                    <button id ="celsius-button" type="button" class="btn btn-outline-primary button">Celsius</button>
+                    <button id ="fahrenheit-button" type="button" class="btn btn-outline-primary">Fahrenheit</button>
+                  </div>
+          </div>
+    </body>
+</html>
