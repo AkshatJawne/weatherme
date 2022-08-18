@@ -84,8 +84,8 @@ city5.addEventListener("click" , function () {
     getData(city5.innerHTML, tempUnits);
 });
 
-function getData (name, units) {
-    fetch("https://api.openweathermap.org/data/2.5/weather?q=" + name +"&appid=24341efa6cf83bb9ddc95fbab31fcb9a&units=" + units).then(
+async function getData (name, units) {
+    await fetch("https://api.openweathermap.org/data/2.5/weather?q=" + name +"&appid=24341efa6cf83bb9ddc95fbab31fcb9a&units=" + units).then(
     res =>(res.json()).then(data => {
         showWeatherData(data);
     })
